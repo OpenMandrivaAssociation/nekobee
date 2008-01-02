@@ -7,6 +7,7 @@ Source: http://static.nekosynth.co.uk/releases/nekobee-%{version}.tar.gz
 URL: http://www.nekosynth.co.uk/wiki/nekobee
 License:	GPL
 Group:		Sound
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires: dssi-devel
 BuildRequires: liblo-devel
 BuildRequires: ladspa-devel
