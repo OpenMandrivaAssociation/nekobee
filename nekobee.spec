@@ -1,18 +1,17 @@
+Name:       nekobee
+Summary:    Bassline DSSI plugin
+Version:    0.1.7
+Release:    3
 
-Name: nekobee
-Summary: Bassline DSSI plugin
-Version: 0.1.7
-Release: %mkrel 2
 Source: http://static.nekosynth.co.uk/releases/nekobee-%{version}.tar.gz
 URL: http://www.nekosynth.co.uk/wiki/nekobee
 License:    GPLv2
 Group:      Sound
-BuildRoot:  %{_tmppath}/%{name}-%{version}-buildroot
-BuildRequires: dssi-devel
-BuildRequires: liblo-devel
-BuildRequires: ladspa-devel
-BuildRequires: libalsa-devel
-BuildRequires: gtk2-devel
+
+BuildRequires:  pkgconfig(dssi)
+BuildRequires:  pkgconfig(liblo)
+BuildRequires:  pkgconfig(alsa)
+BuildRequires:  pkgconfig(gtk+-2.0)
 
 %description
 Bassline DSSI plugin
@@ -28,9 +27,6 @@ Bassline DSSI plugin
 %install
 rm -rf $RPM_BUILD_ROOT
 %makeinstall
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
