@@ -1,7 +1,7 @@
 Name:       nekobee
 Summary:    Bassline DSSI plugin
 Version:    0.1.7
-Release:    4
+Release:    5
 
 Source: http://static.nekosynth.co.uk/releases/nekobee-%{version}.tar.gz
 URL: http://www.nekosynth.co.uk/wiki/nekobee
