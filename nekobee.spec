@@ -8,6 +8,11 @@ URL: https://www.nekosynth.co.uk/wiki/nekobee
 License:    GPLv2
 Group:      Sound
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  pkgconfig(dssi)
 BuildRequires:  pkgconfig(liblo)
 BuildRequires:  pkgconfig(alsa)
